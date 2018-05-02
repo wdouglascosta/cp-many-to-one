@@ -61,8 +61,8 @@ export class CapivaraManytoone {
     //     })
     // }
 
-    private toogleDropdown = () => {
-        this.dropdown = !this.dropdown;
+    private toogleDropdown = (open?) => {
+        this.dropdown = open ? open : !this.dropdown;
         
     }
 
@@ -82,7 +82,7 @@ export class CapivaraManytoone {
         this.$functions.search(param)
             .then((resp) => {
                 this.data = resp;
-                this.toogleDropdown();
+                this.toogleDropdown(true);
             });
     }
 

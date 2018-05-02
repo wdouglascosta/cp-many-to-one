@@ -51,6 +51,6 @@
   "author": "CapivaraJS Team",
   "license": "LGPL-3.0",
   "dependencies": {
-    "capivarajs": "2.0.2"
+    "capivarajs": "2.1.0"
   }
 }

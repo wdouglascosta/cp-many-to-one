@@ -43,6 +43,11 @@ cp-many-to-one{
             &:hover {
                 color: #337ab7;
             }
+            cp-transclude{
+                width: 100%;
+                display: flex;
+                align-items: center;
+            }
         }
 
         .stripped {
