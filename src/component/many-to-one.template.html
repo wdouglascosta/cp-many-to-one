@@ -1,0 +1,12 @@
+<div class="cp-mto-main-div">
+    <div class="cp-mto-sec-div">
+        <input class="cp-mto-input" cp-keyup="$ctrl.inputSearch($event)" type="text" cp-model="$ctrl.itemSelected" >
+        <button>clr</button>
+        <button cp-click="$ctrl.toogleDropdown()">opn</button>
+    </div>
+    <ul class="cp-mto-ul-std" cp-class="{ 'cp-mto-hide' : $ctrl.dropdown }">
+        <li class="cp-mto-li" cp-repeat="obj in $ctrl.data" cp-class="{ 'stripped' : ($index % 2 == 0) }" cp-click="$ctrl.getIndex(obj)">
+            <cp-transclude name="option"></cp-transclude>
+        </li>
+    </ul>
+</div>
